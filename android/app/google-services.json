@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "734906854480",
+    "project_id": "italia-news-live",
+    "storage_bucket": "italia-news-live.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734906854480:android:8f76d5cdae0657a491b555",
+        "android_client_info": {
+          "package_name": "com.example.global_gazzete"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArKcbhTY2XnnWMyQ3vSZWyx29gvGQ1Tdk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
