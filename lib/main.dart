@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      initialRoute: 'verify',
+      initialRoute: 'login',
       routes: {
         'login' : (context)=>LoginScreen(),
         'verify':(context)=> EmailVerification(),
