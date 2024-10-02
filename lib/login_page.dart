@@ -88,7 +88,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               Navigator.of(context).pushAndRemoveUntil(  MaterialPageRoute(
                                     builder: (context) {
                                     return HomeScreen(
-                                        title: 'all', date: "2024-08-30");
+                                        title: 'all', date: currentdate);
                                     },
                                   ),(route)=>false);
                             } catch (e) {

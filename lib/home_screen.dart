@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 }
                 // ignore: use_build_context_synchronously
                 Navigator.of(context)
-                    .pushNamedAndRemoveUntil('LoginRoutes', (route) => false);
+                    .pushNamedAndRemoveUntil('login', (route) => false);
               },
               icon: const Icon(Icons.logout))
         ],
