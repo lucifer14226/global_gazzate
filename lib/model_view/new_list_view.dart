@@ -20,7 +20,7 @@ class _NewListViewState extends State<NewListView> {
   Future<void> getNewsData() async {
     String date = widget.date;
     const String API_KEY = '2284ee30e809483e838d37b14e1bc5af';
-    String topic = "all";
+    String topic = widget.title;
 
     // https://newsapi.org/v2/everything?q=bitcoin&from=2023-06-20&sortBy=publishedAt&apiKey=7dd63a47e817437183b4af9c25e17f84
     try {

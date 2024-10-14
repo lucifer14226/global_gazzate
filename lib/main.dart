@@ -6,7 +6,6 @@ import 'package:global_gazzete/signup_page.dart';
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

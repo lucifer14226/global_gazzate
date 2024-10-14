@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:global_gazzete/constant.dart';
+import 'package:global_gazzete/home_screen.dart';
 
 class CustomSearchDelegate extends SearchDelegate {
   List<String> searchTerms = [
@@ -12,7 +14,8 @@ class CustomSearchDelegate extends SearchDelegate {
   List<Widget>? buildActions(BuildContext context) {
     return [
       IconButton(
-        onPressed: () {},
+        onPressed: () {
+        },
         icon: const Icon(Icons.clear),
       ),
     ];
@@ -21,7 +24,14 @@ class CustomSearchDelegate extends SearchDelegate {
   @override
   Widget? buildLeading(BuildContext context) {
     return IconButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.of(context).pushAndRemoveUntil(  MaterialPageRoute(
+                                    builder: (context) {
+                                    return HomeScreen(
+                                        title: 'all', date: currentdate);
+                                    },
+                                  ),(route)=>false);
+      },
       icon: const Icon(Icons.arrow_back),
     );
   }

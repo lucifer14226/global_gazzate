@@ -16,28 +16,30 @@ class _CategoryContainerState extends State<CategoryContainer> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Container(
-          height: 100,
-          width: 200,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            image: DecorationImage(
-              fit: BoxFit.cover,
-              image: NetworkImage(widget.imageurl),
-            ),
-          ),
-          child: GestureDetector(
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(
-                builder: (context) {
-                  return HomeScreen(title: widget.title, date: currentdate);
+      child: Column(
+        children: [
+          Container(
+              height: 100,
+              width: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: NetworkImage(widget.imageurl),
+                ),
+              ),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return HomeScreen(title: widget.title, date: currentdate);
+                    },
+                  ));
                 },
-              ));
-            },
-            child: Center(
-              child: Text(widget.title),
-            ),
-          )),
+              ),),
+              Center(child: Text(widget.title),)
+        ],
+      ),
     );
   }
 }
