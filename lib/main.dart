@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:global_gazzete/email_verification.dart';
 import 'package:global_gazzete/login_page.dart';
+import 'package:global_gazzete/profile_view.dart';
 import 'package:global_gazzete/signup_page.dart';
 
 void main() {
@@ -17,9 +18,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: 'login',
       routes: {
-        'login' : (context)=>LoginScreen(),
-        'verify':(context)=> EmailVerification(),
-        'register': (context)=>SignUpScreen(),
+        'login' : (context)=>const LoginScreen(),
+        'verify':(context)=> const EmailVerification(),
+        'register': (context)=>const SignUpScreen(),
+        'ProfileRoutes':(context)=> ProfileView()
       }
     );
   }
